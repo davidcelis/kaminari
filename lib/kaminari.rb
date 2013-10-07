@@ -8,7 +8,7 @@ rescue LoadError
   #do nothing
 end
 
-$stderr.puts <<-EOC if !defined?(Rails) && !defined?(Sinatra) && !defined?(Grape)
+$stderr.puts <<-EOC if !defined?(ActiveRecord) && !defined?(Sinatra) && !defined?(Grape)
 warning: no framework detected.
 
 Your Gemfile might not be configured properly.
